@@ -1,0 +1,134 @@
+{
+  "info": {
+    "_postman_id": "833fa831-e063-4d9e-82a0-a80bcb069331",
+    "name": "GitHub Profile Analyzer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47277301",
+    "_collection_link": "https://go.postman.co/collection/47277301-833fa831-e063-4d9e-82a0-a80bcb069331?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Analyze Profile",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/github/analyze/octocat",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "github",
+            "analyze",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Profiles",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/github/profiles",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "github",
+            "profiles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Profile",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/github/search?username=octo",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "github",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "octo"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Profiles",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/github/profiles/octocat",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "github",
+            "profiles",
+            "octocat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseurl",
+      "value": ""
+    }
+  ]
+}
